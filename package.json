@@ -1,0 +1,17 @@
+{
+  "name": "nexuscore-enterprise-entra-saml-scim",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Network operations training dashboard with Microsoft Entra SAML SSO and SCIM 2.0 lifecycle API",
+  "main": "server.js",
+  "scripts": {"start":"node server.js", "check":"node tests/static-check.js && node tests/ui-check.js", "test":"node tests/static-check.js && node tests/ui-check.js"},
+  "engines": {"node": ">=20"},
+  "dependencies": {
+    "@node-saml/passport-saml": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "passport": "^0.7.0"
+  }
+}
